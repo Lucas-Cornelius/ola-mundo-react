@@ -1,0 +1,108 @@
+.banner {
+    padding: 3rem 7.5rem 6.25rem;
+    background-color: var(--azul-escuro);
+    color: var(--branco);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.747);
+}
+ 
+.titulo {
+    font-family: var(--fonte-secundaria);
+    font-size: 4rem;
+    margin-top: 4.875rem;
+    margin-bottom: 2rem;
+}
+ 
+.paragrafo {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+}
+ 
+.imagens {
+    position: relative;
+    height: 406px;
+}
+ 
+.imagens > .minhaFoto {
+    position: absolute;
+    right: 0;
+    bottom: 75px;
+    width: 300px;
+    border-radius: 50%;
+}
+ 
+.imagens > .circuloColorido {
+    position: absolute;
+    right: 3vw;
+    bottom: 100px;
+    width: 300px;
+}
+ 
+@media (max-width: 1100px) {    
+    .banner {
+        padding: 3.5rem 1.5rem;
+    }
+ 
+    .titulo {
+        margin-top: 0;
+        margin-bottom: 1.5rem;
+    }
+ 
+    .paragrafo {
+        margin-bottom: 1.5rem;
+    }
+ 
+    .imagens {
+        height: 338px;
+    }
+   
+    .imagens > .circuloColorido {
+        right: 4vw;
+        width: 200px;
+    }
+
+    .imagens > .minhaFoto {
+        width: 200px;
+    }
+}
+ 
+@media (max-width: 744px) {
+    .banner {
+        padding: 2rem 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+ 
+    .titulo {
+        margin-bottom: 2rem;
+    }
+ 
+    .paragrafo {
+        margin-bottom: 2rem;
+    }
+ 
+    .imagens {
+        height: 307px;
+    }
+ 
+    .imagens > .minhaFoto, .imagens > .circuloColorido {
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+
+    .imagens > .circuloColorido {
+        right: 50px;
+        bottom: 80px;
+    }
+
+    .imagens > .minhaFoto {
+        bottom: 40px;
+    }
+   
+}

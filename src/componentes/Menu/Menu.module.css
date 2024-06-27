@@ -1,0 +1,15 @@
+.navegacao {
+    height: 112px;
+    display: flex;
+    justify-content: end;
+    padding-right: 4rem;
+    align-items: center;
+    column-gap: 3rem;
+    background: var(--azul-gradient);
+}
+
+/* @media (max-width: 744px) {
+    .navegacao {
+        height: 72px;
+    }
+} */

@@ -1,0 +1,25 @@
+.link {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    font-weight: 800;
+    color: var(--cor-fonte-principal);
+    display: flex;
+    flex-direction: column;
+    filter: var(--filtro-drop);
+}
+
+.link::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: black;
+    transition: width .2s ease;
+}
+
+.active::after {
+    width: 100% !important;
+}
+
+.link:hover::after {
+    width: 50%;
+}

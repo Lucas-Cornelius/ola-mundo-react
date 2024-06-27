@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --azul-escuro: #041833;
+  --azul-medio: #1875E8;
+  --azul-gradient: linear-gradient(
+    to top,
+    hsl(213.49, 70.49%, 11.96%) 0%,
+    hsl(219.54, 32.48%, 17.51%) 5%,
+    hsl(222.14, 14.19%, 26%) 10.2%,
+    hsl(223.02, 7.37%, 35%) 15.5%,
+    hsl(223.4, 4.32%, 43.9%) 20.9%,
+    hsl(223.6, 3%, 52.43%) 26.6%,
+    hsl(223.71, 2.73%, 60.48%) 32.5%,
+    hsl(223.78, 2.55%, 67.95%) 38.6%,
+    hsl(223.82, 2.41%, 74.8%) 45%,
+    hsl(223.86, 2.3%, 80.96%) 51.7%,
+    hsl(223.88, 2.22%, 86.39%) 58.7%,
+    hsl(223.89, 2.16%, 91.01%) 66.1%,
+    hsl(223.91, 2.12%, 94.77%) 74%,
+    hsl(223.91, 2.09%, 97.59%) 82.2%,
+    hsl(223.92, 2.07%, 99.37%) 90.8%,
+    hsl(0, 0%, 100%) 100%
+  );
+  --cor-fonte-principal: #041833;
+  --cor-fonte-post: #444444;
+  --branco: #FFF;
+  --fonte-principal: 'Raleway', sans-serif;
+  --fonte-secundaria: 'Playfair Display', sans-serif;
+  --filtro-drop: drop-shadow(2px 2px 4px rgb(360, 360, 360));
+
+  font-family: var(--fonte-principal);
+}
+
+#root {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: minmax(0, 1fr);
+  min-height: 100vh;
+}
+
+a, button, input, textarea {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  background-color: transparent;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  line-height: 5rem;
+}
+
+.active::after {
+  width: 100% !important;
+}
